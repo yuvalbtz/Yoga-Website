@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import {graphql} from 'gatsby'
 import BackgroundImage from 'gatsby-background-image'
-import Image from '../components/Image'
+import Image from '../components/image'
 import Fade from 'react-reveal/Fade'
 
 
