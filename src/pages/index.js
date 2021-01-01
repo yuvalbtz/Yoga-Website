@@ -1,22 +1,58 @@
 import React from "react"
-import { Link } from "gatsby"
-
+import BackgroundImage from 'gatsby-background-image'
 import Layout from "../components/layout"
-import Image from "../components/image"
+import {graphql} from'gatsby'
 import SEO from "../components/seo"
+import '../components/style.css'
+import CardYoga from '../components/CardYoga'
 
-const IndexPage = () => (
+const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
-    <div style={{ maxWidth: `300px`, marginBottom: `1.45rem` }}>
-      <Image />
-    </div>
-    <Link to="/page-2/">Go to page 2</Link> <br />
-    <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
+   <BackgroundImage className="bg-img" fluid={props.data.desktop.childImageSharp.fluid} >
+     <CardYoga 
+       yoga1={props.data.yoga1.childImageSharp.fluid}
+       yoga2={props.data.yoga2.childImageSharp.fluid}
+       yoga3={props.data.yoga3.childImageSharp.fluid}
+     
+     /> 
+     </BackgroundImage>
+    
+   
   </Layout>
 )
 
 export default IndexPage
+
+export const pageQuery = graphql`
+query {
+  desktop: file(relativePath: { eq: "images/beach-bg.jpg" }) {
+    childImageSharp {
+      fluid(maxWidth: 1800, quality: 100) {
+        ...GatsbyImageSharpFluid
+      }
+    }
+  },
+  yoga1: file(relativePath: { eq: "images/yuval_ricon_background_image_3.jpg" }) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 100) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+  },
+  yoga2: file(relativePath: { eq: "images/yuval_ricon_background_image_19.jpg" }) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 100) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+  },
+  yoga3: file(relativePath: { eq: "images/yuval_ricon_background_image.jpg" }) {
+    childImageSharp {
+      fluid(maxWidth: 3080, quality: 100) {
+        ...GatsbyImageSharpFluid_withWebp
+      }
+    }
+  }
+}
+`;

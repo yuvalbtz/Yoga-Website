@@ -1,17 +1,30 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `Yuval Ricon`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-styled-components',
+    'gatsby-background-image',
+    `gatsby-plugin-transition-link`,
+    `gatsby-transformer-ffmpeg`,
+    'gatsby-plugin-ffmpeg',
+    
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
-      },
+        name: `src`,
+        path: `${__dirname}/src`,
+        },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `yuval_ricon_vids`,
+        path: `${__dirname}/src/yuval_ricon_vids`,
+        },
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
