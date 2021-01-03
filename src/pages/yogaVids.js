@@ -28,7 +28,7 @@ query {
   vids: file(relativePath: { eq: "images/vids-bg.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 1800, quality:100) {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_withWebp
       }
     }
   },

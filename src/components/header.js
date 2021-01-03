@@ -64,15 +64,15 @@ const Header = ({ siteTitle }) => {
         
       </MobileIcon>
       <NavMenu onClick={handleOnclick} click={click}>
-      <LinkStyle paintDrip hex="#8AC0C2" duration={0.8} to="/about" activeStyle={{ borderRadius:'50%',borderTop: '2px solid white', transform:'translate(0px,-12px)' }} >
+      <LinkStyle paintDrip hex="#8AC0C2" duration={0.8} to="/about/" activeStyle={{ borderRadius:'50%',borderTop: '2px solid white', transform:'translate(0px,-12px)' }} >
         קצת עלי 
         </LinkStyle>
 
-       <LinkStyle   cover direction="up"  bg="#8AC0C2" to="/yogaVids" activeStyle={{ borderRadius:'50%',borderTop: '2px solid white', transform:'translate(0px,-12px)' }} >
+       <LinkStyle   cover direction="up"  bg="#8AC0C2" to="/yogaVids/" activeStyle={{ borderRadius:'50%',borderTop: '2px solid white', transform:'translate(0px,-12px)' }} >
         סרטוני יוגה
         </LinkStyle>
 
-        <LinkStyle   cover direction="left"  bg="#8AC0C2" to="/yogaGallery" activeStyle={{ borderRadius:'50%',borderTop: '2px solid white', transform:'translate(0px,-12px)' }} >
+        <LinkStyle   cover direction="left"  bg="#8AC0C2" to="/yogaGallery/" activeStyle={{ borderRadius:'50%',borderTop: '2px solid white', transform:'translate(0px,-12px)' }} >
         גלריית יוגה
         </LinkStyle>
 
