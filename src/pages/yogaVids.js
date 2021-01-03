@@ -11,7 +11,7 @@ function yogaVids(props) {
   return (
         <Layout>
         <SEO title="סרטוני יוגה" />
-        <BackgroundImage className="bg-img" fluid={props.data.vids.childImageSharp.fluid} >
+        <BackgroundImage className="bg-img" fluid={props.data.vids.childImageSharp.fluid}  Tag="section"  >
         <Fade bottom>
          <Videos/>
          </Fade>

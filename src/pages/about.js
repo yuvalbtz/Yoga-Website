@@ -7,7 +7,7 @@ function about(props) {
     return (
         <Layout>
          <SEO title="קצת עלי" />
-         <BackgroundImage className="about-bg-img" fluid={props.data.about.childImageSharp.fluid}>
+         <BackgroundImage className="about-bg-img" fluid={props.data.about.childImageSharp.fluid}  Tag="section">
 
          </BackgroundImage>
         </Layout>
@@ -21,7 +21,7 @@ query {
   about: file(relativePath: { eq: "images/yuval_ricon_background_image_2.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 2000,quality: 100) {
-        ...GatsbyImageSharpFluid
+        ...GatsbyImageSharpFluid_withWebp
       }
     }
   },

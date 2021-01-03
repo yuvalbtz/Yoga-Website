@@ -13,7 +13,7 @@ const yogaGallery = (props) => {
   
   return ( <Layout>
     <SEO title="גלריה" />
-    <BackgroundImage  className="bg-img" fluid={props.data.gallery.childImageSharp.fluid} >
+    <BackgroundImage  className="bg-img" fluid={props.data.gallery.childImageSharp.fluid}  Tag="section" >
     <Fade right>
     <Image/>
     </Fade>

@@ -9,17 +9,14 @@ import CardYoga from '../components/CardYoga'
 const IndexPage = (props) => (
   <Layout>
     <SEO title="Home" />
-   <BackgroundImage className="bg-img" fluid={props.data.desktop.childImageSharp.fluid} >
+   <BackgroundImage className="bg-img" fluid={props.data.desktop.childImageSharp.fluid}  Tag="section" >
      <CardYoga 
        yoga1={props.data.yoga1.childImageSharp.fluid}
        yoga2={props.data.yoga2.childImageSharp.fluid}
        yoga3={props.data.yoga3.childImageSharp.fluid}
-     
      /> 
      </BackgroundImage>
-    
-   
-  </Layout>
+     </Layout>
 )
 
 export default IndexPage
