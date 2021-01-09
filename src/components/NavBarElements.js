@@ -105,7 +105,7 @@ margin:0;
   position:absolute;
   top:${({click}) => click ? "100%" : "-1000px"};
   opacity:1;
-  background:#8AC0C2;
+  background:#14A7A7;
   overflow-y:auto;
   padding:40px 0 40px 0;
   transition: all 0.2s ease;
