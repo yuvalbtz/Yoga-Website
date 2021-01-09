@@ -8,8 +8,8 @@ import CardYoga from '../components/CardYoga'
 
 const IndexPage = (props) => (
   <Layout>
-    <SEO title="Home" />
-   <BackgroundImage className="bg-img" fluid={props.data.desktop.childImageSharp.fluid}  Tag="section" >
+    <SEO title="דף הבית" />
+   <BackgroundImage className="bg-img" fluid={props.data.desktop.childImageSharp.fluid}  >
      <CardYoga 
        yoga1={props.data.yoga1.childImageSharp.fluid}
        yoga2={props.data.yoga2.childImageSharp.fluid}
@@ -25,7 +25,7 @@ export const pageQuery = graphql`
 query {
   desktop: file(relativePath: { eq: "images/beach-bg.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 1800, quality: 100) {
+      fluid(maxWidth: 1400, quality: 100) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }

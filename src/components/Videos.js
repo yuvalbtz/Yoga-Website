@@ -21,7 +21,7 @@ const Videos = () => {
 
 
 return ( 
-
+    
 <div className="video-container" >
 <div className="video-grid">
   {pageQuery.allFile.edges.map((video, key) => 

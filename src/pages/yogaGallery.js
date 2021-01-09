@@ -12,7 +12,7 @@ import Fade from 'react-reveal/Fade'
 const yogaGallery = (props) => {
   
   return ( <Layout>
-    <SEO title="גלריה" />
+    <SEO title="גלריית יוגה" />
     <BackgroundImage  className="bg-img" fluid={props.data.gallery.childImageSharp.fluid}  Tag="section" >
     <Fade right>
     <Image/>
@@ -29,7 +29,7 @@ export const data = graphql`
   query {
     gallery: file(relativePath: { eq: "images/gallery-bg.jpg" }) {
       childImageSharp {
-        fluid(maxWidth: 1800, quality: 100) {
+        fluid(maxWidth: 1440, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }

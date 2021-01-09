@@ -2,7 +2,7 @@ import { Link } from 'gatsby';
 import styled from 'styled-components';
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 export const Nav = styled.nav`
-  background: ${({active}) => active ? "transparent" : "#8AC0C2" };
+  background: ${({active}) => active ? "transparent" : "#14A7A7" };
   width:100%;
   height: 80px;
   display:flex;
@@ -14,7 +14,7 @@ export const Nav = styled.nav`
   z-index:10;
   transition: 0.8s all ease;
   @media screen and (max-width:960px){
-    background: ${({click}) => click ? "#8AC0C2" : "transparent"};
+    background: ${({click}) => click ? "#14A7A7" : "transparent"};
     
     
   }
@@ -41,7 +41,6 @@ font-size:1.5rem;
 display:flex;
 margin-left:12px;
 border-top:${({active}) => active === "false" ? "2px solid white" : "none"};
-
 @media screen and (max-width:960px){
 border-top:${({click}) => click === "true" ? "2px solid white" : "none"};
 

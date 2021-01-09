@@ -27,7 +27,7 @@ export const pageQuery = graphql`
 query {
   vids: file(relativePath: { eq: "images/vids-bg.jpg" }) {
     childImageSharp {
-      fluid(maxWidth: 1800, quality:100) {
+      fluid(maxWidth: 1440, quality:100) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }

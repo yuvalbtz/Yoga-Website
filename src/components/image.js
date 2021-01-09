@@ -27,6 +27,7 @@ return (
         <Img key={key} 
         className="image-item"
         fluid={image.node.childImageSharp.fluid}
+        alt={"image"}
         />
      )}
   </div>
