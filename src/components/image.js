@@ -5,7 +5,7 @@ import './GalleryImages.css'
 const Image = () => {
 const data = useStaticQuery(graphql`
 {
-  allFile(filter: {name: {regex: "/(yuval_ricon_background_image)/"}}) {
+  allFile(filter: {name: {regex: "/(background_image)/"}}) {
     edges {
       node {
         childImageSharp {

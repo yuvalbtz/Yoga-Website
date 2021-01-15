@@ -20,7 +20,7 @@ export default about
 
 export const pageQuery = graphql`
 query {
-  about: file(relativePath: { eq: "images/yuval_ricon_background_image_2.jpg" }) {
+  about: file(relativePath: { eq: "images/background_image_2.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 1400, quality: 100) {
         ...GatsbyImageSharpFluid_withWebp

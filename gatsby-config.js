@@ -22,8 +22,8 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `yuval_ricon_vids`,
-        path: `${__dirname}/src/yuval_ricon_vids`,
+        name: `vids`,
+        path: `${__dirname}/src/vids`,
         },
     },
     `gatsby-transformer-sharp`,

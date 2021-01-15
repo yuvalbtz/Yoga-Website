@@ -1,7 +1,7 @@
 import React from 'react'
 import { graphql, useStaticQuery } from 'gatsby'
 import './GalleryVideos.css'
-import GatsbyVideo from './GatsbyVideo'
+
 
 const Videos = () => {
 

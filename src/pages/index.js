@@ -30,21 +30,21 @@ query {
       }
     }
   },
-  yoga1: file(relativePath: { eq: "images/yuval_ricon_background_image_3.jpg" }) {
+  yoga1: file(relativePath: { eq: "images/background_image_3.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 100) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
   },
-  yoga2: file(relativePath: { eq: "images/yuval_ricon_background_image_19.jpg" }) {
+  yoga2: file(relativePath: { eq: "images/background_image_19.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 100) {
         ...GatsbyImageSharpFluid_withWebp
       }
     }
   },
-  yoga3: file(relativePath: { eq: "images/yuval_ricon_background_image.jpg" }) {
+  yoga3: file(relativePath: { eq: "images/background_image.jpg" }) {
     childImageSharp {
       fluid(maxWidth: 3080, quality: 100) {
         ...GatsbyImageSharpFluid_withWebp
